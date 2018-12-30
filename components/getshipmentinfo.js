@@ -23,7 +23,7 @@ module.exports = {
                 conversation.variable("time", date.getHours() + ':' + date.getMinutes());
                 conversation.transition("success");
             } else {
-                conversation.reply("Seems like you entered an invalid shipment id, try again...").transition("error");
+                conversation.transition("error");
             }
             done();
         });
